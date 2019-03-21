@@ -25,7 +25,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-FILE_NAME = 'last_seen_id2.txt'
+FILE_NAME = 'last_seen_id.txt'
 
 TEXT2 = nltk.corpus.gutenberg.words('austen-emma.txt')
 
