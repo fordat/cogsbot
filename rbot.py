@@ -41,7 +41,7 @@ TEXT = nltk.word_tokenize('the quick brown fox jumped over the lazy red cat and 
     + 'can the cat eat the watermelon '
     + 'Im thinking about that watermelon ')
 
-# NLTK shortcuts :)
+# NLTK shortcuts
 bigrams = nltk.bigrams(TEXT2)
 cfd = nltk.ConditionalFreqDist(bigrams)
 
