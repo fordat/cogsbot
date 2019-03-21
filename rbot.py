@@ -104,6 +104,12 @@ def reply_to_tweets():
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name + ' ' 
                 + print_new(word), mention.id)
+        elif 'bye' in mention.full_text.lower():
+            word = random.choice(TEXT2)
+            print('found goodbye!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('@' + mention.user.screen_name + ' ' 
+                + 'All the best,\n' + 'Márton', mention.id)
 
 
 while True:
