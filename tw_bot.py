@@ -45,12 +45,12 @@ def reply_to_tweets():
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
                     ' i love you as a friend', mention.id)
-        elif 'friend' in mention.full_text.lower():
+        if 'friend' in mention.full_text.lower():
             print('found friend!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
                     ' lets be friends', mention.id)
-        elif 'baby' in mention.full_text.lower():
+        if 'baby' in mention.full_text.lower():
             print('found baby!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
