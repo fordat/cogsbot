@@ -1,0 +1,66 @@
+
+Hey everybody, hope you all had a great break :)
+Labs are up and running again this week, and the pre-lab has just been posted. Make sure to complete it before you come to lab.
+
+Hi folks,
+Since people seemed to be in complete shock when I said that many people use "text" as the past tense of "text", I thought I'd provide a bit of evidence so that you don't think this only exists in your crazy lecturer's head. Try googling "I text her yesterday" or "I text him yesterday": both give you a fair number of hits. Tellingly, many of these are people *complaining* about others using the "incorrect" past tense "text" (or wondering whether they are correct to use "text" or if they should say "texted"). Of course, for a linguist, there's no such thing as "incorrect" usage, as we aim to *describe* and not *prescribe* people's verbal behaviour. So when people start complaining/wondering about a linguistic form, it's a surefire sign that that form now exists not simply as a speech error, but as an established (though not necessarily prestigious) variant
+
+I know, I know – a blog post is not typically a particularly reliable source, but this is a relatively new phenomenon, so it doesn't yet appear in dictionaries / published papers. And Arnold Zwicky is an established & highly reputable scholar!
+All the best,
+Márton
+
+Hi all,
+Hope you're all enjoying the snow! Since today's classes were cancelled, there are a few announcements that I wasn't able to make in class, so here they are:
+1) This week, it's the Tuesday lab group's turn to submit conversation starters. Please do this even if it seems that there's a chance that Thursday's classes will be cancelled too (which, I think, is highly unlikely).
+2) There's definitely an overall improvement in the reading responses, which I'm very pleased about – well done, everyone! One thing that I wanted to point out (this is sth that I'd already mentioned as general feedback on the first set of responses) is that we expect you to prioritise reliable external sources such as peer-reviewed journal articles, books, conference proceedings, etc. as opposed to popular articles (e.g. online magazines, etc.). I know that this can be a little challenging, especially if you haven't done it before. But here's an easy trick that might help: if you find e.g. a popular article that reports on interesting and relevant results, you can almost always find out what primary research it is based on (good journalists will always make this clear, and will link to the original papers). You can then have a quick look through the original paper to check whether it's in line with what the popular article reported, and refer to the original paper in your essay.
+3) Because we'll only have a single class this week, and since the reading for today was quite a challenging one, I've decided to drop one of Thursday's readings, namely McClelland and Patterson (2002). If you've already read it, you're a hero and you have all my respect. If you haven't, that's fine, and don't worry if you don't find the time to do so. Also, it's still ok to refer to this in your reading responses / conversation starters if you want to. Remember that there is still a paper assigned for Thursday, namely Pinker and Ullmann (2002) – you're still meant to read this one.
+All the best,
+Márton
+
+Hi all,
+This is just a reminder that your 400-word reading responses (based on a reading from weeks 4–5) are due on Friday before midnight. The submission point is now online – apologies for not making it available earlier.
+All the best,
+Márton
+
+Hi all,
+We have run into some issues around the assignment submission points due to the way Canvas is set up (i.e. it seems that group assignments only allow a single submission per group, and simply overwrite that submission when someone else from the group puts in their work). For now, please hold off on submitting your assignments (post-labs & conversation starters); if we can't find a solution before Weds, I'll ask you to email me your conversation starters (but don't do that yet!).
+Since this is by no means your fault, the submission deadlines for the post-labs will be extended until we find a solution (though I'd still recommend finishing them as soon as you can). We'll keep you posted!
+Apologies for the inconvenience!
+All the best,
+Márton
+
+Hi all,
+The assignment submission point is now fixed, so you can go ahead and submit your post-labs and conversation starters (if you're in the Monday Lab – remember, conversation starters are solicited from a different group each week!). The deadline for the conversation starters this week is 23:59 tonight; for all other weeks, it will be 12noon on Weds. The deadline for all the post-labs is Friday 11 Jan at 23:59 this week; for all other weeks, it will be 23:59 on the day after the lab.
+If you've only recently gotten into the course or you signed up for a lab group relatively recently, this may not be reflected in the sections that were added to the course. If this is the case, you won't see submission points on Canvas – in which case please email me, and I can add you manually for now. Please also let me know if there are any other issues.
+I'll aim to scan and upload next week's readings today. 
+All the best,
+Márton
+
+Hi all,
+Here's some further information about the reading responses (just to make the task a little clearer): Please use the first sentence or two to highlight what you believe is the main message of the reading. Please don't summarise the entire paper (400 words doesn't give you the space to do that). You can respond to any point in the reading (i.e. it doesn't have to be the main message), and – as I said in class – you can bring in external ideas from other related fields. But please make sure that you pitch your essay at a level where a non-specialist (i.e. someone with a generic COGS background but no specialisation in linguistics / philosophy / etc.) can follow along. There is a limit of 400 words. Do not make your essay any longer than this, as we'll take off marks for that. Shorter is OK in principle, but, realistically, anything shorter than 300 words won't give you enough space to articulate a well-reasoned argument. Writing a 400-word essay can be hard due to the severe limitations on space! I'm sure many of you will do great on this first essay, but if you don't, don't panic. Your lowest grade is excluded from the calculation of the final grade, and we'll give feedback on what could be improved. Having thought about this, it will be easier to coordinate the responses if they are submitted online, so please ignore the info in the syllabus: there will be an online submission point, and you're asked to submit your response online. You do not need to submit a hard copy in class.
+I'll update the syllabus over the weekend to reflect this info.
+All the best,
+Márton
+
+Hi folks,
+Only about half the class have filled out the poll about changing the assessment structure for the course. You still have time until midnight tonight to have your say about conversation starters / quizzes! So please vote if you haven't already done so.
+All the best,
+Márton
+
+Apologies, forgot to attach the quiz revision topics. Here they are!
+All the best,
+Márton
+ 
+Turing machines: understand the key components of a Turing machine predict what a Turing machine will do given a description of the machine (rules, states, tape, current position of tape) explain what a simple Turing machine does (e.g. "this Turing machine counts in reverse binary") understand what a Universal Turing Machine is and what it is capable of (but there won't be any questions about how a UTM actually works) understand what the Turing Test is 
+
+Hi all,
+For this week's lab, you'll need to engage with a concept that we haven't yet tackled in the lectures: subsumption architectures. We'll talk a little more about this idea in Thursday's lecture, but, in the meantime, here's an excerpt from a lecture at MIT, which gives a really good summary of subsumption in about 11 minutes. 
+
+All the best,
+Márton 
+
+Hi all,
+The first online quiz will be available from 9am this morning. Since this is the first quiz, I'm giving you a slightly more generous time limit than promised: you have 40 minutes to complete it. Make sure to find a quiet and distraction-free place where you can take the quiz without interruptions (it's not possible to stop the timer!).
+You have until next Monday at 9am to take the quiz. (That's exactly a week. This is a slightly extended deadline to accommodate for the fact that you have both a reading response and a quiz due this week.)
+All the best,
+Márton
