@@ -27,45 +27,39 @@ api = tweepy.API(auth)
 
 FILE_NAME = 'last_seen_id.txt'
 
-TEXT2 = nltk.corpus.gutenberg.words('austen-emma.txt')
+announcements = open('marton.txt','r').read()
 
-TEXT = nltk.word_tokenize('the quick brown fox jumped over the lazy red cat and I ate a watermelon and watched the whole thing happen ' 
-    + 'I never thought it would go this far '
-    + 'Im thinking about texting you '
-    + 'the quick fox learned how to eat watermelon '
-    + 'Im not sure what you want me to do '
-    + 'Im not thinking about what you want me to do '
-    + 'the brown fox and the red cat learned how far it would go '
-    + 'lets see the fox and the cat do something new '
-    + 'how far can the dog go '
-    + 'can the cat eat the watermelon '
-    + 'Im thinking about that watermelon ')
+MARTON = nltk.word_tokenize(announcements)
 
-# NLTK shortcuts
-bigrams = nltk.bigrams(TEXT2)
-cfd = nltk.ConditionalFreqDist(bigrams)
+AUSTEN = nltk.corpus.gutenberg.words('austen-emma.txt')
+
+# MARTON'S BIGRAMS
+ms_bigrams = nltk.bigrams(MARTON)
+ms_cfd = nltk.ConditionalFreqDist(ms_bigrams)
+
+# AUSTEN'S BIGRAMS
+ja_bigrams = nltk.bigrams(AUSTEN)
+ja_cfd = nltk.ConditionalFreqDist(ja_bigrams)
 
 
-# protoype for status updates. this function
-# will print a random 30 word string created 
-# from jane austen texts.
-def print_austen():
-# pick a random word from the corpus to start with
-    word = random.choice(TEXT2)
-# generate 15 more words
-    for i in range(30):
-        print(word + ' ', end='')
-        if word in cfd:
-            word = random.choice(list(cfd[word].keys()))
-        else:
-            break
-
-def print_new(word):
+# print things marton would say, using data from his announcements.
+def print_marton(word):
     acc = ""
     for i in range(30):
         acc += word + ' '
-        if word in cfd:
-            word = random.choice(list(cfd[word].keys()))
+        if word in ms_cfd:
+            word = random.choice(list(ms_cfd[word].keys()))
+        else:
+            break
+    return acc
+
+# print things Jane Austen would write, using data from her book Em.
+def print_austen(word):
+    acc = ""
+    for i in range(30):
+        acc += word + ' '
+        if word in ja_cfd:
+            word = random.choice(list(ja_cfd[word].keys()))
         else:
             break
     return acc
@@ -98,18 +92,21 @@ def reply_to_tweets():
         print(str(mention.id) + ' - ' + mention.full_text, flush=True)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
+        if '#announcements' in mention.full_text.lower():
+            word = random.choice(MARTON)
+            print('found announcements!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('@' + mention.user.screen_name + ' ' 
+                + 'Hi all,\n\n' 
+                + print_marton(word) 
+                + '\n\nAll the best,\n\nMarton', mention.id)        
         if '#austen' in mention.full_text.lower():
-            word = random.choice(TEXT2)
+            word = random.choice(AUSTEN)
             print('found austen!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name + ' ' 
-                + print_new(word), mention.id)
-        elif 'bye' in mention.full_text.lower():
-            word = random.choice(TEXT2)
-            print('found goodbye!', flush=True)
-            print('responding back...', flush=True)
-            api.update_status('@' + mention.user.screen_name + ' ' 
-                + 'All the best,\n' + 'Márton', mention.id)
+                + print_austen(word), mention.id)
+
 
 
 while True:
