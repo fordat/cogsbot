@@ -106,6 +106,11 @@ def reply_to_tweets():
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name + ' ' 
                 + print_austen(word), mention.id)
+        if 'bye' in mention.full_text.lower():
+            print('found bye!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('@' + mention.user.screen_name + ' ' 
+                + 'All the best,\n\nMárton', mention.id)
 
 
 
