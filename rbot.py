@@ -99,7 +99,7 @@ def reply_to_tweets():
             api.update_status('@' + mention.user.screen_name + ' ' 
                 + 'Hi all,\n\n' 
                 + print_marton(word) 
-                + '\n\nAll the best,\n\nMarton', mention.id)        
+                + '\n\nAll the best,\n\nMárton', mention.id)        
         if '#austen' in mention.full_text.lower():
             word = random.choice(AUSTEN)
             print('found austen!', flush=True)
