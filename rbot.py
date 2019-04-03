@@ -3,6 +3,10 @@ import random
 import ssl
 import tweepy
 import time
+from nltk import word_tokenize,sent_tokenize
+
+# import keys from another file (no u can't see mine get ur own ಠ_ಠ)
+from keys import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET
 
 try:
     _create_unverified_https_context = ssl._create_unverified_context
@@ -11,15 +15,8 @@ except AttributeError:
 else:
     ssl._create_default_https_context = _create_unverified_https_context
 
-from nltk import word_tokenize,sent_tokenize
-
 
 print('this is my twitter bot')
-
-CONSUMER_KEY = 'cRQIM9wXVlcTPP7PK9TS0l6ha'
-CONSUMER_SECRET = 'nxe4JwHxluk0Cf7E7CWko1nGyMvlCP3Zy5AhFtN5htwf6NBU8o'
-ACCESS_KEY = '1106272251651854336-Hz6Fxxmx0FqNuR7qjaXmu4URJFAnRA'
-ACCESS_SECRET = 'ym83aFQGDKsnYUYaI0FzZHf6qOMv8JMa3DN9rLLI4POOW'
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
